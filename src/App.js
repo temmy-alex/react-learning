@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import BlueButton from './Component/BlueButton';
+import Conditional from './Component/Conditional';
+import Counter from './Component/Counter';
+import ListArray from './Component/ListArray';
+import ListObject from './Component/ListObject';
+import ListObjectConditional from './Component/ListObjectConditional';
+import Rendering from './Component/Rendering';
+import Table from './Component/Table';
 
 function App() {
+  // function info() {
+  //   alert('Lorem ipsum')
+  // }
+
+  const info = () => {
+    alert('Lorem ipsum')
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        {/* <Rendering />
+        <Conditional />
+        <ListArray />
+        <ListObject />      
+        <ListObjectConditional />
+        <Table />
+        <BlueButton onCustomClick={info} caption='Tampilkan' /> */}
+      <Counter />
     </div>
   );
 }
