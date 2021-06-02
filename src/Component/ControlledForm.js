@@ -10,6 +10,7 @@ const ControlledForm = () => {
     const handleSubmit = event => {
         event.preventDefault()
 
+        // Call name state above
         const formData = { name, isMember, gender, category, comment }
         console.log(formData)
     }
@@ -20,7 +21,7 @@ const ControlledForm = () => {
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>
-                        Name: <input type='text' className='form-control' value={name} onChange={(e) => setName(e.target.value)} />
+                        Name: <input type='text' className='form-control' defaultValue={name} onChange={(e) => setName(e.target.value)} />
                     </label>
                 </div>
                 

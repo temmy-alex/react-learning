@@ -1,5 +1,5 @@
 import * as React from 'react'
-// import { Component, useRef, useState } from 'react'
+// import { useRef } from 'react'
 
 const UncontrolledForm = () => {
     const inputName = React.useRef(null)
@@ -21,7 +21,7 @@ const UncontrolledForm = () => {
 
     return <form onSubmit={handleSubmit}>
         <label>
-            Name: <input type='text' ref={inputName} defaultValue='Test' />
+            Name: <input type='text' ref={inputName} placeholder='Enter Name' defaultValue='' />
         </label>
         <br/><br/>
         <label>
