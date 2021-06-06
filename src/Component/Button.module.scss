@@ -1,0 +1,14 @@
+$bgColor: #000;
+$bgColorHover: #fff;
+
+.defaultbutton {
+    border: 1px solid #ddd;
+    background-color: $bgColor;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+}
+
+.defaultbutton:hover {
+    background-color: $bgColorHover;
+}

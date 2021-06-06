@@ -20,6 +20,7 @@ const FormValidation = () => {
         setError('')
         const value = e.target.value
         if(!value.includes('@')) {
+            
             setError('Email yang anda masukkan kurang tepat')
         }
         setEmail(value)

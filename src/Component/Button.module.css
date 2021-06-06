@@ -1,0 +1,10 @@
+.buttondefault {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.buttondefault:hover {
+    background-color: #fff;
+}
